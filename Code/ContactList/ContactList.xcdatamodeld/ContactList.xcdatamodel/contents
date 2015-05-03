@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A238x" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Numbers" representedClassName="Numbers" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Persons" representedClassName="Persons" syncable="YES">
+        <attribute name="fName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Numbers" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Persons" positionX="-4077" positionY="-693" width="128" height="103"/>
+        <element name="Numbers" positionX="-3807" positionY="-585" width="128" height="58"/>
+    </elements>
+</model>
